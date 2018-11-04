@@ -1,10 +1,11 @@
 {
-  "name": "materialized-path",
-  "version": "1.0.1",
+  "name": "materialized-tree",
+  "version": "1.0.0",
+  "description": "build trees using the materialized path pattern",
+  "keywords": ["tree", "hierarchy", "nested", "comment"],
+  "license": "MIT",
   "main": "lib/path.js",
   "repository": "JaneJeon/materialized-path-nodejs",
-  "license": "MIT",
-  "private": true,
   "dependencies": {
     "uuid": "^3.3.2"
   },
