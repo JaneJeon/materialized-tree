@@ -21,8 +21,18 @@ Unlike other implementations of the materialized path pattern (across many langu
 ## Sample Usage
 ```javascript
 const path = require('./lib/path')
-const parent = path() // modify it as you'd like, and insert into the database
+const parent = path() // modify it as you'd like before saving it
 const child = path(parent) // direct descendant of the parent
 
 db.save([parent, child]) // store it however you'd like!
+```
+
+And then, you can query it as follows:
+```sql
+-- show comments in the order they were created
+SELECT * FROM comments ORDER BY path LIMIT 25;
+-- ...or sort by "new"
+SELECT * FROM comments ORDER BY htap LIMIT 25;
+-- select subtree of a comment (you can switch the order: path <-> htap)
+SELECT * FROM comments WHERE path LIKE '.AFOiAN/REeiNQp3O15meYw==%';
 ```
