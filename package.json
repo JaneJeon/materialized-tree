@@ -5,7 +5,7 @@
   "keywords": ["tree", "hierarchy", "nested", "comment"],
   "license": "MIT",
   "main": "lib/path.js",
-  "repository": "JaneJeon/materialized-path-nodejs",
+  "repository": "JaneJeon/materialized-tree",
   "dependencies": {
     "uuid": "^3.3.2"
   },
