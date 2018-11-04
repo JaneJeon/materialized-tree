@@ -20,15 +20,13 @@ describe("path", () => {
     })
 
     it("has chronological order", () => {
-      assert(root.path < parent.path)
       assert(parent.path < child1.path)
       assert(child1.path < child2.path)
     })
 
     it("has anti-chronological order", () => {
-      assert(root.htap < parent.htap)
       assert(parent.htap < child1.htap)
-      assert(child1.htap > child2.htap)
+      assert(child2.htap < child1.htap)
     })
   })
 })
