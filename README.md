@@ -36,3 +36,5 @@ SELECT * FROM comments ORDER BY htap LIMIT 25;
 -- select subtree of a comment (you can switch the order: path <-> htap)
 SELECT * FROM comments WHERE path LIKE '.AFOiAN/REeiNQp3O15meYw==.%';
 ```
+
+For further usage, please see `/test`.

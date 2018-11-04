@@ -1,11 +1,18 @@
 {
   "name": "materialized-path",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "lib/path.js",
   "repository": "JaneJeon/materialized-path-nodejs",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha --bail --exit --check-leaks"
   }
 }
