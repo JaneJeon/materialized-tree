@@ -4,6 +4,7 @@
   "description": "build trees using the materialized path pattern",
   "keywords": ["tree", "hierarchy", "nested", "comment"],
   "license": "MIT",
+  "author": "Jane Jeon <JaneJeon9719@gmail.com>",
   "main": "lib/path.js",
   "repository": "JaneJeon/materialized-tree",
   "dependencies": {
