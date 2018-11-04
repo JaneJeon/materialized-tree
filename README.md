@@ -20,7 +20,7 @@ Unlike other implementations of the materialized path pattern (across many langu
 
 ## Sample Usage
 ```javascript
-const path = require('materialized-path')
+const path = require('materialized-tree')
 const parent = path() // modify it as you'd like before saving it
 const child = path(parent) // direct descendant of the parent
 
