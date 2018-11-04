@@ -1,5 +1,5 @@
 const path = require("../lib/path"),
-  { expect } = require("chai")
+  assert = require("assert").strict
 
 describe("path", () => {
   const root = path(),
@@ -9,26 +9,26 @@ describe("path", () => {
 
   describe("root node", () =>
     it("is empty", () => {
-      expect(root.path).to.equal(".")
-      expect(root.htap).to.equal(".")
+      assert.equal(root.path, ".")
+      assert.equal(root.htap, ".")
     }))
 
   describe("child node", () => {
     it("extends parent", () => {
-      expect(child1.path.startsWith(parent.path)).to.be.true
-      expect(child2.htap.startsWith(parent.htap)).to.be.true
+      assert(child1.path.startsWith(parent.path))
+      assert(child2.htap.startsWith(parent.htap))
     })
 
     it("has chronological order", () => {
-      expect(root.path < parent.path).to.be.true
-      expect(parent.path < child1.path).to.be.true
-      expect(child1.path < child2.path).to.be.true
+      assert(root.path < parent.path)
+      assert(parent.path < child1.path)
+      assert(child1.path < child2.path)
     })
 
     it("has anti-chronological order", () => {
-      expect(root.htap < parent.htap).to.be.true
-      expect(parent.htap < child1.htap).to.be.true
-      expect(child1.htap > child2.htap).to.be.true
+      assert(root.htap < parent.htap)
+      assert(parent.htap < child1.htap)
+      assert(child1.htap > child2.htap)
     })
   })
 })
