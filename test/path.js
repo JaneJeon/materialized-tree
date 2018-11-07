@@ -2,16 +2,9 @@ const path = require("../lib/path"),
   assert = require("assert").strict
 
 describe("path", () => {
-  const root = path(),
-    parent = path(root),
+  const parent = path(),
     child1 = path(parent),
     child2 = path(parent)
-
-  describe("root node", () =>
-    it("is empty", () => {
-      assert.equal(root.path, ".")
-      assert.equal(root.htap, ".")
-    }))
 
   describe("child node", () => {
     it("extends parent", () => {

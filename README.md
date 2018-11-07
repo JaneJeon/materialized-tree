@@ -34,7 +34,7 @@ SELECT * FROM comments ORDER BY path LIMIT 25;
 -- ...or sort by "new"
 SELECT * FROM comments ORDER BY htap LIMIT 25;
 -- select subtree of a comment (you can switch the order: path <-> htap)
-SELECT * FROM comments WHERE path LIKE '.pCBmVvtKoigp9Zv+.%';
+SELECT * FROM comments WHERE path LIKE '.pCBmVvtKoigp9Zv+%';
 ```
 
 For further usage, please see `/test`.
