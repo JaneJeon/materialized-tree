@@ -27,6 +27,13 @@ const child = path(parent) // direct descendant of the parent
 db.save([parent, child]) // store it however you'd like!
 ```
 
+Or, if you want a more compact representation, you can store `path` as a 12 byte binary:
+```javascript
+const path = require('materialized-tree')
+const parent = path(null, true) // entirely immutable
+const child = path(parent, true) // parent is unchanged
+```
+
 And then, you can query it as follows:
 ```sql
 -- show comments in the order they were created
