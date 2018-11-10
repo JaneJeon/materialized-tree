@@ -38,3 +38,7 @@ SELECT * FROM comments WHERE path LIKE '.pCBmVvtKoigp9Zv+%';
 ```
 
 For further usage, please see `/test`.
+
+- drop the dot/separator?
+- store as binary?
+- uuid integrations?
