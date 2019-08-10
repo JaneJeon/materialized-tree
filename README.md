@@ -1,4 +1,4 @@
-# Materialized Tree [![npm version](https://badge.fury.io/js/materialized-tree.svg)](https://badge.fury.io/js/materialized-tree)
+# Materialized Tree [![CircleCI](https://circleci.com/gh/JaneJeon/materialized-tree.svg?style=shield)](https://circleci.com/gh/JaneJeon/materialized-tree) [![npm version](https://badge.fury.io/js/materialized-tree.svg)](https://badge.fury.io/js/materialized-tree)
 Store a tree in *any* kind of database (SQL/document/K-V) using the materialized path pattern, which makes your queries fast and your data model simple, unlike some of the alternatives:
 - nested tree is insanely difficult to insert nodes into, and to move/delete them around
 - adjacency list (`parent_id => id`) is quick and easy to deal with, until you want to pull out the full tree path (which you have to do for something like a comment system), at which point you'll be dealing with big, complex recursive queries that take too long
