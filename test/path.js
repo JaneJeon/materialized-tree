@@ -1,5 +1,5 @@
 const path = require("../lib/path"),
-	assert = require("assert").strict
+	assert = require("assert")
 
 describe("path", () => {
 	const parent = path(),
