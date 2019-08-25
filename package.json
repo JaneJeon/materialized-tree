@@ -13,7 +13,7 @@
   "main": "lib/path.js",
   "repository": "JaneJeon/materialized-tree",
   "dependencies": {
-    "microtime": "^2.1.8"
+    "microtime": "^3.0.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
